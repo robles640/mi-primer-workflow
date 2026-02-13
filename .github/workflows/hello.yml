@@ -1,0 +1,17 @@
+name: Hello World Workflow
+
+on: [push]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say hello
+        run: echo "Hello, GitHub Actions!"
+
+      - name: Show date
+        run: date
+
+      - name: List files
+        run: ls -la
